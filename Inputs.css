@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    margin-left: 50px;
+    margin-top: 50px;
+    row-gap: 30px;
+}
+
+body{
+    font-family: arial;
+    font-size: 13px;
+    color: rgb(211, 235, 255);
+    background-image: url('assets/diary-background.jpg');
+    background-size: cover;
+}
+
+.submit{
+    align-self: center;
+}
+
+#title, #date{
+    font-size: 17px;
+    padding: 8px;
+}
+
+#title{
+    width: 500px;
+}
+
+#body{
+    width: 800px;
+    height: 300px;
+    line-height: 1;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 1.1px;
+    font-family: arial;
+}
+
+#title, #date, #body{
+    background-color: rgba(255, 255, 255, 0.592);
+    border:solid  white 1px;
+    border-radius: 10px;
+    color: black;
+}
+
+#title:focus, #date:focus, #body:focus{
+    outline: solid white 1px;
+}
+
+#title::placeholder, #body::placeholder{
+    color: black;
+}
+
+#submit-button{
+    cursor:pointer;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    border: solid rgb(60, 60, 255) 1px;
+    color: rgb(60, 60, 255);
+    border-radius: 23px;
+    transition: 0.3s;
+}
+
+#submit-button:hover{
+    background-color: rgb(60, 60, 255);
+    border: solid white 1px;
+    color: white;
+    border-radius: 23px;
+}
